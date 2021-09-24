@@ -1,13 +1,251 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* Global Properties */
+
+* {
+  color: #333;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html, body {
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f1356d;
+}
+
+#root {
+  height: 100%;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: block;
+  /* background-color: gray; */
+}
+
+/* ScrollBar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f1356da1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #f1356d;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+/* Navbar and link */
+
+.navbar {
+  width: 100%;
+  top: 0;
+  padding: 13px;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  box-sizing: border-box;
+  background-color: #fff;
+  align-items: center;
+  border-bottom: 1px solid #efefef;
+  z-index: 1;
+}
+
+.navbar-image {
+  width: 100%;
+  height: 56px;
+  background-image: url(./img/Donuts.svg);
+  background-repeat: no-repeat;
+}
+
+.navbar .links {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+.navbar .links a {
+  margin-left: 20px;
+}
+
+/* Image Slider */
+
+.image-slider {
+  max-width: 1000px;
+  height: 562px;
+  padding-left: 0px;
+  margin-top: 5px;
+}
+
+.image-slider button img {
+  height: 60px;
+  top: 5% !important;
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Not Found Page */
+.not-found {
+  margin-left: 20px;
+}
+
+.not-found h2 {
+  color: #a5254c;
+}
+
+.not-found a {
+  padding: 5px;
+  border: 1px solid #f1356d;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.donuts-not-found {
+  width: 400px;
+  height: 400px;
+  margin: 20px auto;
+  background-image: url(./img/Donutsnf.svg);
+  background-repeat: no-repeat;
+}
+
+/* content-items / ite */
+
+.content-items {
+  width: 100%;
+}
+
+.item {
+  width: 80%;
+  margin: 10px auto;
+  padding:3px 10px 10px 10px;
+  margin-bottom: 30px;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  cursor: pointer;
+}
+
+.item-header {
+  width: 100%;
+  padding: 7px 0px;
+  display: flex;
+  position: relative;
+}
+
+.item h2, .item p {
+  display: inline-block;
+}
+
+.item p {
+  right: 10px;
+  bottom: 0px;
+  color: #555;
+  font-size: 12px;
+  position: absolute;
+}
+
+.item:hover {
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.continue-reading {
+  right: 15px;
+  top: 5px;
+  color: #444;
+  display: none;
+  position: absolute;
+}
+
+.item:hover .continue-reading {
+  display: block;
+}
+
+.item:hover, .item:hover h2{
+  color: #f1356d;
+}
+
+.item-image {
+  width: 100%;
+  height: 450px;
+  position: relative;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  background-size: auto;
+}
+
+/* Blog Details */
+
+.blog-details {
+  width: 100%;
+  min-height: 400px;
+  padding: 13px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.blog-details h2 {
+  color: #f1356d;
+  margin-top: -3px;
+  font-size: 24px;
+}
+
+.detailed-image {
+  width: 50%;
+  height: 50%;
+  float: left;
+  margin: 0 10px 0 0px;
+}
+
+.detailed-content p{
+  text-align: justify;
+}
+
+.detailed-image img {
+  width: 100%;
+  height: 100%;
+}
+
+.go-back {
+  padding: 5px;
+  border: 1px solid #f1356d;
+  background-color: transparent;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/* footer */
+
+.footer {
+  max-width: 1000px;
+  height: 115px;
+  padding: 15px 0px 0px 0px;
+  bottom: 0px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  background-color: #fff;
+  border-top: 1px solid #dadada;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 16px;
 }
