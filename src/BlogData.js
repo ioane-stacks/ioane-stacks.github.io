@@ -2,6 +2,10 @@ import image1 from './BlogListImages/1.jpg';
 import image2 from './BlogListImages/2.jpg';
 import image3 from './BlogListImages/3.jpg';
 
+import gallery1 from './ImageGallery/1.jpg';
+import gallery2 from './ImageGallery/2.jpg';
+import gallery3 from './ImageGallery/3.jpg';
+
 export const BlogData = [
     {
         title: 'Best donuts of Tbilisi',
@@ -19,6 +23,12 @@ export const BlogData = [
         city: "Tbilisi",
         street: "Rustaveli",
         body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec finibus metus, eu ornare ex. Nullam vitae urna sed ligula interdum cursus ut a felis. Proin pretium maximus risus in accumsan. Praesent.",
+        hasGallery: true,
+        images: [
+            {url: gallery1},
+            {url: gallery2},
+            {url: gallery3}
+        ],
         id: 2
     },
     {

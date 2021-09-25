@@ -21,8 +21,8 @@ const Blog = () => {
 
     return (
         <div>
-            {error && <div><NotFound /></div>}
             {isPending && <p>Loading...</p>}
+            {error && <div><NotFound /></div>}
             {data && <BlogDetails data={data} />}
         </div>
     );

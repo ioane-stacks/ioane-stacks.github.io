@@ -3,6 +3,7 @@
 
 * {
   color: #333;
+  user-select: none;
 }
 
 html, body {
@@ -194,7 +195,7 @@ a:hover {
 
 .blog-details {
   width: 100%;
-  min-height: 400px;
+  min-height: 310px;
   padding: 13px;
   box-sizing: border-box;
   margin: 0 auto;
@@ -239,6 +240,7 @@ a:hover {
   padding: 15px 0px 0px 0px;
   bottom: 0px;
   margin: 0 auto;
+  margin-top: 10px;
   box-sizing: border-box;
   position: relative;
   background-color: #fff;
@@ -248,4 +250,92 @@ a:hover {
 
 .footer p {
   font-size: 16px;
+}
+
+/* Image Gallery / Resized */
+
+.gallery {
+  position: relative;
+}
+
+.image-gallery {
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  /* background-color: gray; */
+}
+
+.image-gallery img {
+  width: 19.5%;
+  height: 120px;
+  margin:0 0.24%;
+  background-size: cover;
+  border-radius: 3px;
+  user-select: none;
+  cursor: pointer;
+  box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.2), 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.image-resized {
+  width: 50%;
+  height: 320px;
+  margin: 10px auto;
+  position: relative;
+  border-radius: 3px;
+  box-shadow: -1px -1px 5px rgba(0, 0, 0, 0.2), 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.image-resized span {
+  padding: 1px 4px;
+  right: 10px;
+  top: 10px;
+  background-color: white;
+  border-radius: 5px;
+  position: absolute;
+  color: #f1356d;
+  cursor: pointer;
+  box-shadow: -1px -1px 3px rgba(0, 0, 0, 0.2), 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.image-resized img{
+  width: 100% !important;
+  height: 100%;
+}
+
+/* About Page */
+
+.about-page {
+  text-align: center;
+}
+
+.about-page h2 {
+  color: #f1356d;
+}
+
+.about-page p{
+  max-width: 80%;
+  font-size: 18px;
+  text-align: start;
+  margin: 0 auto;
+}
+
+/* Contact */
+
+.contact-map {
+  width: 100%;
+  text-align: center;
+}
+
+.contact-page h2 {
+  color: #f1356d;
+}
+
+.contact-page p, .contact-page b, .contact-page a {
+  user-select: text !important;
+  -webkit-user-select: text !important;
+}
+
+.contact-info span {
+  color: rgb(223, 70, 70);
 }
