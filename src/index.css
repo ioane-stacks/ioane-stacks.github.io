@@ -337,6 +337,11 @@ a:hover {
   -webkit-user-select: text !important;
 }
 
+.contact-info {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 .contact-info span {
   color: rgb(223, 70, 70);
 }
