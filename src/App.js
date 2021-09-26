@@ -18,9 +18,6 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/Donuts-Market/">
-              <Home />
-            </Route>
             <Route path="/About">
               <About />
             </Route>
