@@ -16,12 +16,12 @@ function App() {
   //to the default page of Home "/";
   const [reloadType] = useState(performance.navigation.type);
   const [hostName] = useState(window.location.hostname)
-  console.log(hostName);
+
   useEffect(() => {
     hostName !== "localhost" ?
       reloadType === 1 ? window.location.href = "/Donuts-Market/" : console.log("Everything Works!")
     : console.log("Everything Works!");
-  }, [reloadType]);
+  }, [hostName, reloadType]);
 
 
   return (
